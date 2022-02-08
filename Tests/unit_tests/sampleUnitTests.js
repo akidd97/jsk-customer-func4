@@ -44,7 +44,7 @@ describe('sampleUnitTests', function () {
 		};
         azfunction(mockContext, mockRequest).then((result) => {
             assert.equal('200', mockContext.res.status, 'Response code should be 200');
-//            assert.equal('Hello there! Welcome to Azure Functions!', mockContext.res.body, 'Response body is incorrect');
+            assert.equal('Hello there! Welcome to Azure Functions!', mockContext.res.body, 'Response body is incorrect');
             done();
         }).catch((error) => {
             done(error);
